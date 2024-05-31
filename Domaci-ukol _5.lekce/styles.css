@@ -1,0 +1,556 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --label-bestseller: #fffa87;
+  --label-product-year: #ee1212;
+  --price_backet: #ee121240;
+  --border-button: #000;
+  --button: #d9d9d9;
+  --info-background: #7fcb5b61;
+  --more-info: #969494;
+  --info-a: #32840c;
+  --text-color-label: #fff;
+  --product-green: #3b990f;
+  --product-gray: #808080;
+  --product-brown: #413e01;
+  --product-yellow: #fffa87;
+  --background-gray: #ecebeb;
+}
+
+.main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* hero sekce*/
+.hero {
+  margin: 30px;
+}
+
+.hero-picture {
+  position: relative;
+  background-image: url(images/hero-section-img.png);
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 8px;
+}
+
+.hero-text {
+  color: white;
+  padding: 15px 0px 0px 15px;
+}
+
+.hero-btn {
+  border: none;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  width: 60px;
+  height: 30px;
+  background-color: var(--label-product-year);
+  border-radius: 5px;
+}
+
+.hero a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-top: 7px;
+  text-decoration: none;
+  color: white;
+}
+
+.hero-discount {
+  position: absolute;
+  top: 35px;
+  right: 25px;
+  background-color: var(--label-product-year);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 125%;
+}
+
+/* promo sekce */
+.promo {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 0px 30px 30px 30px;
+}
+
+.promo-vysavac {
+  background-image: url(images/vysavac.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 250px;
+  height: 200px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.promo-mobil {
+  background-image: url(images/mobil.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 250px;
+  height: 200px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.promo-bunda {
+  position: relative;
+  background-image: url(images/clothes.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 250px;
+  height: 200px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.promo-vysavac p,
+.promo-mobil p,
+.promo-bunda p {
+  position: absolute;
+  left: 15px;
+  bottom: 60px;
+  color: white;
+  font-size: 140%;
+}
+
+.promo-vysavac-button,
+.promo-mobil-button,
+.promo-bunda-button {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  width: 60px;
+  height: 28px;
+  background-color: var(--label-product-year);
+  border: none;
+  border-radius: 5px;
+}
+
+.promo-vysavac a,
+.promo-mobil a,
+.promo-bunda a {
+  display: block;
+  height: 100%;
+  padding-top: 6px;
+  text-decoration: none;
+  color: white;
+}
+
+/* product cards shoes, computer, sekačka */
+
+.main-product-cards {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 5px;
+  background-color: #9cdae9;
+  margin: 0px 30px 15px 30px;
+  padding-bottom: 30px;
+}
+
+/* product card shoes */
+
+.product-card {
+  position: relative;
+  width: 280px;
+  background-color: var(--text-color-label);
+  margin-top: 20px;
+  padding: 16px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.product-image-container {
+  text-align: center;
+}
+
+.product-image-container img {
+  width: 200px;
+}
+
+.product-title {
+  font-size: 32px;
+  line-height: 1.5;
+}
+
+.product-more-info {
+  color: var(--product-gray);
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.product-price-label {
+  font-weight: bold;
+}
+
+.product-price {
+  color: var(--product-gray);
+  text-decoration: underline;
+}
+
+.add-to-cart-button {
+  background-color: var(--label-product-year);
+  font-weight: bold;
+  font-size: 110%;
+  display: inline-block;
+  padding: 8px 0;
+  width: 80%;
+  text-align: center;
+  border-radius: 30px;
+  color: var(--text-color-label);
+}
+
+.product-price-label-container {
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+.product-price-container {
+  text-align: left;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.product-price {
+  margin: 10px 0px 15px 0px;
+  text-decoration: line-through;
+}
+
+.product-discount-price-container {
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.product-discount-price {
+  text-align: left;
+  color: #000;
+  font-size: 25px;
+}
+
+.product-info-container {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.shipping-stock {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  background-color: #c5c5c5;
+  margin: 20px 0px;
+}
+
+.shipping-label {
+  background-color: var(--text-color-label);
+  color: var(--label-product-year);
+  border: 1px solid var(--label-product-year);
+  padding: 5px;
+}
+
+.stock-label {
+  color: var(--info-a);
+  text-decoration: underline;
+}
+
+.product-description {
+  margin-bottom: 4px;
+  margin-top: 0;
+}
+
+.product-title {
+  font-size: 32px;
+  line-height: 1.5;
+  margin-bottom: 4px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* produktové karty počítač*/
+.cards {
+  margin-top: 20px;
+}
+.cards-main {
+  position: relative;
+  width: 280px;
+  margin: auto;
+  padding: 20px;
+  background-color: var(--text-color-label);
+  border-radius: 5px;
+}
+
+.picture {
+  text-align: center;
+}
+
+.picture img {
+  width: 170px;
+}
+
+.label-bestseller {
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  width: 100px;
+  height: 30px;
+  font-weight: bolder;
+  font-size: 100%;
+  border-radius: 0px 7px 7px 0px;
+  background-color: var(--label-bestseller);
+}
+
+.label-product-year {
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 70px;
+  left: 0px;
+  width: 158px;
+  height: 30px;
+  font-weight: bolder;
+  font-size: 100%;
+  border-radius: 0px 7px 7px 0px;
+  background-color: var(--label-product-year);
+  color: var(--text-color-label);
+}
+
+.label-discount {
+  position: absolute;
+  right: 20px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: var(--label-product-year);
+  color: var(--text-color-label);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 110%;
+}
+
+.more_info {
+  text-decoration: underline;
+  color: var(--more-info);
+}
+
+.price_backet {
+  height: 95px;
+  position: relative;
+  background-color: var(--border-button);
+  margin: 20px 0 20px 0;
+  border-radius: 10px;
+  background-color: var(--price_backet);
+}
+
+.paragraph {
+  position: absolute;
+  left: 20px;
+  bottom: 45px;
+  font-weight: bolder;
+  font-size: 165%;
+}
+
+.paragraph1 {
+  position: absolute;
+  left: 20px;
+  bottom: 30px;
+  font-weight: bolder;
+  font-size: 95%;
+}
+
+.button a {
+  display: block;
+  position: absolute;
+  right: 20px;
+  bottom: 32px;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 5px 10px 5px 10px;
+  background-color: var(--button);
+  text-decoration: none;
+  color: var(--border-button);
+}
+
+.info_end {
+  height: 50px;
+  position: relative;
+  background-color: var(--info-background);
+  color: #32840c;
+  border-radius: 6px;
+  font-size: 90%;
+}
+
+.info_end_p {
+  padding: 5px 0px 0px 5px;
+  font-weight: bolder;
+}
+
+.info {
+  position: absolute;
+  right: 10px;
+  top: 25px;
+  font-weight: bolder;
+  font-size: 90%;
+}
+
+.info a {
+  color: var(--info-a);
+}
+
+/* sekačka */
+
+.cards-main-sekacka {
+  position: relative;
+  width: 280px;
+  margin: auto;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: var(--text-color-label);
+  border-radius: 5px;
+  padding-bottom: 175px;
+  text-align: center;
+}
+
+.picture-sekacka img {
+  width: 170px;
+}
+
+.more_info-sekacka {
+  text-decoration: underline;
+  color: var(--more-info);
+}
+
+.price_backet-sekacka {
+  height: 95px;
+  position: relative;
+  background-color: var(--border-button);
+  margin: 20px 0 20px 0;
+  border-radius: 10px;
+  background-color: var(--price_backet);
+}
+
+.paragraph-sekacka {
+  position: absolute;
+  left: 20px;
+  bottom: 45px;
+  font-weight: bolder;
+  font-size: 165%;
+}
+
+.paragraph1-sekacka {
+  position: absolute;
+  left: 20px;
+  bottom: 30px;
+  font-weight: bolder;
+  font-size: 95%;
+}
+
+.button-sekacka a {
+  display: block;
+  position: absolute;
+  right: 20px;
+  bottom: 32px;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 5px 10px 5px 10px;
+  background-color: var(--button);
+  text-decoration: none;
+  color: var(--border-button);
+}
+
+.info_end-sekacka {
+  height: 50px;
+  position: relative;
+  background-color: var(--info-background);
+  color: #32840c;
+  border-radius: 6px;
+  font-size: 90%;
+}
+
+.info_end_p-sekacka {
+  padding: 5px 0px 0px 5px;
+  font-weight: bolder;
+}
+
+.info-sekacka {
+  position: absolute;
+  right: 10px;
+  top: 25px;
+  font-weight: bolder;
+  font-size: 90%;
+}
+
+.info-sekacka a {
+  color: var(--info-a);
+}
+
+@media (max-width: 768px) {
+  .promo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-discount {
+    font-size: 90%;
+    width: 60px;
+    height: 60px;
+  }
+
+  .label-bestseller {
+    font-size: 85%;
+    width: 85px;
+    height: 25px;
+    padding-left: 20px;
+  }
+
+  .label-discount {
+    font-size: 85%;
+    width: 50px;
+    height: 50px;
+  }
+
+  .label-product-year {
+    font-size: 85%;
+    width: 140px;
+    height: 25px;
+    padding-left: 20px;
+  }
+
+  .add-to-cart-button {
+    font-size: 100%;
+    width: 75%;
+  }
+}
